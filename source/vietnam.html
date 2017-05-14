@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Viet Nam </title> 
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+	<style>
+		
+		body {background-color: #fff;width: 100%;}
+		a{text-decoration: none;}
+		.input[type=text] {
+		    width: 130px;
+		    -webkit-transition: width 0.4s ease-in-out;
+		    transition: width 0.4s ease-in-out;
+		}
+
+
+		/* When the input field gets focus, change its width to 100% */
+		input[type=text]:focus {
+		    width: 100%;
+
+		}
+		ul {list-style-type: none;}
+
+		#wapper{background-color: #fff;}
+		.head {background-color:#e4e4e4;width: 100%;}
+		.header{width: 1024px;margin: 0 auto;display: table;}
+		.header_left{width: 25%;float: left;}
+		.logo{width: 100%;}
+		.logo img {width: 98%;}
+		.text{width: 100%;}
+		.header_right{width: 73%; float: right;}
+		.mid, .bottom {width: 100%;display: table;float: right;}
+		.mid input{float: right;}
+		.top{width: 50%;display: table;clear: both;float: right;}
+		.face, .ungdung, .tuyendung, .rss{width: 24%;float: left;}
+		.icon_chung{width: 25%;float: left;}
+		.icon_chung img{width: 98%;}
+		.text{width: 74%; float: left;font-size: 10px;}
+		.bottom ul{width: 100%;float: right;: }
+		.bottom ul li{float: right;text-decoration: none;font-size: 15px;border-right:1px solid black; }
+		/*li :last-child{border-right:none;}*/
+		.content{width: 100%;width: 1024px;margin: 0 auto;}
+		.sukiennong{width: 100%;}
+		.content_top{width: 100%;}
+		.content_top_left{width: 75%;float: left;}
+		.content_top_left_left{width: 74%;float: left;}
+		.content_top_left_left_top{width: 100%;float: left;}
+		.content_top_left_left_top_img{width: 100%;}
+		.content_top_left_left_top_img img{width: 99%;}
+		.content_top_left_left_top_title{width: 100%;}
+		.content_top_left_left_top_des{width: 100%;}
+		.content_top_left_left_bottom{width: 100%;float: left;}
+		.content_top_left_left_bottom_mot,.content_top_left_left_bottom_hai,.content_top_left_left_bottom_ba{width: 33%;float: left;}
+		.img_chung{width: 100%;}.img_chung img{width: 98%;}.text_chung{width: 100%;float: left;}
+		.content_top_left_right {width: 24%;float: left;}
+		.bidv{width: 100%;float: left;display: table;}
+		.content_top_left_right_tinlienquan{width: 100%;float: left;}
+		.content_top_left_right_tinlienquan ul{width: 100%;float: left;display: table;list-style-type: none;    margin-left: -38px;}
+		.content_top_left_right_tinlienquan ul li{text-decoration: none;}
+		.content_top_right{width: 21%;float: right;}
+		.content_top_right img{width: 98%;}
+		.menu {width: 100%;display: table;float:left;background-color:#e4e4e4; }
+		.menu ul{width: 100%;}
+		.menu ul li{float: left;}
+		.quangcaohai{width: 100%;display: table;}
+		.quangcaohai img{width: 98%;}
+		.content_bottom {width: 100%;display: table;margin-top:10px; }
+		.contented{width: 80%;float: left;display: table;margin-top: 10px; }
+		.contented_top{width: 100%;float: left;border: 1px solid #e4e4e4;margin-top: 10px;display: table;margin-bottom: 10px;}
+		.content_top_mot,.content_top_hai,.content_top_ba,.content_top_bon,.content_top_nam{width: 18%;float: left;display: table;}
+		.content_top_mot_img{width: 100%;}
+		.content_top_mot_img img{width: 99%;}
+		.content_top_mot_text{width: 100%;}
+
+		.quangcaoba{width: 18%; float: right;display: table;}
+		.quangcaoba img{width: 99%;}
+		.contented_mid{width: 100%;margin-top: 10px;display: table;}
+		.contented_mid_left{width: 70%;float: left;}
+		.title_tintuc{width: 100%;display: table;background-color: #e4e4e4;}
+		.title_tintuc_left{width: 30%;float: left;border-top:1px solid #c2030a;}
+		.title_tintuc_left p{text-align:center;color: #c2030a;}
+		.title_tintuc_right{width: 69%;float: right;}
+		.title_tintuc_right ul{width: 100%;    margin-left: -38px;}
+		.title_tintuc_right ul li{float: left;border-right: 1px solid black;padding:0 5px;}
+		
+		.noidung_tintuc{width: 100%;display: table;}
+		.noidung_tintuc_left{width: 70%;float: left;}
+		.noidung_tintuc_left_img{width: 100%;}
+		.noidung_tintuc_left_img img{width: 99%;}
+		.noidung_tintuc_left_title{width: 100%;}
+		.noidung_tintuc_left_des{width: 100%;}
+		.noidung_tintuc_right{width: 29%;float: right;}
+		.noidung_tintuc_right_img{width: 100%;}
+		.noidung_tintuc_right_img img{width: 99%;}
+		.noidung_tintuc_right_title{width: 100%;}
+		.noidung_tintuc_right_lienquan{width: 100%;}
+		.noidung_tintuc_right_lienquan ul{width: 100%;    margin-left: -38px;}
+		.noidung_tintuc_right_lienquan ul li{width: 100%;}
+
+		.contented_mid_right_chung{width: 100%;display: table;}
+		.contented_mid_left_chung{width: 100%;}
+		.contented_mid_right{width: 28%;float: right;}
+		.contented_mid_right_title{width: 100%;background-color: #e4e4e4;border-top:1px solid #c2030a;  }
+		.contented_mid_right_title p{text-align: center;color: #c2030a; }
+		.contented_mid_right_noidung{width: 100%;display: table;}
+		.contented_mid_right_noidung_img{width: 60%;float: left;}
+		.contented_mid_right_noidung_img img{width: 99%;}
+		.contented_mid_right_noidung_title{width: 38%;float: right;}
+		.contented_mid_right_lienquan{width: 99%;display: table;}
+		.contented_mid_right_lienquan ul{width: 100%;    margin-left: -38px;}
+		.contented_mid_right_lienquan ul li {width: 100%;}
+		.hoptac{width: 100%;background-color: #e4e4e4;}
+		.raovat{width: 100%;}
+		.raovat_title{width: 100%;background-color: #e4e4e4;}
+		.raovat_title p{color: #c2030a;}
+		.raovat_lienquan{width: 100%;}
+		.raovat_lienquan ul{width: 100%;margin-left: -38px;}
+		.raovat_lienquan ul li{width: 100%; border-bottom: 1px solid #e4e4e4;}
+		.quancaobon{width: 100%;}
+		.quancaobon img{width: 99%;}
+		.footer{width: 100%;background-color: #e4e4e4;}
+		.footered{width: 1024px;margin: 0 auto;display: table;}
+		.menu_bottom{width: 100%;display: table;}
+		.menu_bottom > ul{width: 100%;display: table;}
+		.menu_bottom > ul > li {float: left;margin-left: 30px;display: table;}
+		.menu_bottom > ul > li >ul {margin-left: -38px; display: table;}
+		.thongtin{width: 100%;}
+		.thongtin_web{width: 49%;float: left;}
+		.thongtin_web ,.thongtin_lienheqc p{font-size: 13px;}
+		.thongtin_lienheqc{width: 49%;float: right;}
+		.lienheqc_title {width: 50%;background-color: #c2030a;display: table;clear: both;margin:0;padding: 0;border-radius: 0  100px 100px 0;}
+		.lienheqc_title p{font-size: 20px;color: #fff;}
+	</style>
+</head>
+<body>
+ 	<div id="wapper">
+ 		<div class="head">
+ 			<div class="header">
+ 				<div class="header_left">
+	 				<div class="logo">
+	 					<img src="image/logovn.png">
+	 				</div>
+	 				<div class="text">
+	 					<p>Báo điện tử chính thống hàng đầu Việt Nam</p>
+	 				</div>
+ 				</div>
+ 				<div class="header_right">
+	 				<div class="top">
+	 					<div class="face">
+	 						<div class="icon_chung"><img src="image\facebook.png"></div>
+	 						<div class="text"><p>FACEBOOK</p></div>
+	 					</div>
+	 					<div class="ungdung">
+	 						<div class="icon_chung"><img src="image\ungdung.png"></div>
+	 						<div class="text"><p>FACEBOOK</p></div>
+	 					</div>
+	 					<div class="tuyendung">
+	 						<div class="icon_chung"><img src="image\tuyendung.png"></div>
+	 						<div class="text"><p>FACEBOOK</p></div>
+	 					</div>
+	 					<div class="rss">
+	 						<div class="icon_chung"><img src="image\rss.png"></div>
+	 						<div class="text"><p>FACEBOOK</p></div>
+	 					</div>
+
+	 				</div>
+	 				<div class="mid">
+	 					<input type="text" name="search" placeholder="Search..">
+	 				</div>
+	 				<div class="bottom">
+	 					<ul>
+	 						<li><a href=""></a>TIN TUC 24H</li>
+	 						<li><a href=""></a>TUANVIETNAM</li>
+	 						<li><a href=""></a>TINTUCONLINE</li>
+	 						<li><a href=""></a>2SAO</li>
+	 						<li><a href=""></a>GAMESAO</li>
+	 						<li><a href=""></a>XE</li>
+	 						<li><a href=""></a>ECHIP</li>
+	 						<li><a href=""></a>VEF</li>
+	 						<li><a href=""></a>ENGLISH</li>
+	 					</ul>
+	 				</div>
+ 				</div>
+ 			</div>
+ 		</div><!--End#header-->
+ 		<div class="content">
+ 			<div class="menu">
+ 				<ul>
+ 					<li><a href="">Home</a></li>
+ 					<li><a href="">Thoi su</a></li>
+ 					<li><a href="">Kinh doanh</a></li>
+ 					<li><a href="">Giai tri</a></li>
+ 					<li><a href="">Thoi gioi</a></li>
+ 					<li><a href="">Giao duc</a></li>
+ 					<li><a href="">Doi song</a></li>
+ 					<li><a href="">Phat luat</a></li>
+ 					<li><a href="">The thao</a></li>
+ 					<li><a href="">Cong nghe</a></li>
+ 					<li><a href="">Suc song</a></li>
+ 					<li><a href="">Suc khoe </a></li>
+ 					<li><a href="">Bat dong san</a></li>
+ 					<li><a href="">Ban doc</a></li>
+ 					<li><a href="">infographic</a></li>
+ 					<li><a href="">Blog</a></li>
+ 					<li><a href="">Video</a></li>
+ 				</ul>
+ 			</div>
+ 			<div class="sukiennong">
+ 				<p>Su kien NONG</p>
+ 			</div>
+ 			<div class="content_top">
+ 				<div class="content_top_left">
+ 					<div class="content_top_left_left">
+ 						<div class="content_top_left_left_top">
+ 							<div class="content_top_left_left_top_img"><img src="image\a1.png"></div>
+ 							<div class="content_top_left_left_top_title"><a href=""><p>Tàu vỏ thép gần 20 tỷ rỉ sét do 'nước biển quá mặn'</p></a></div>
+ 							<div class="content_top_left_left_top_des"><p>Tàu vỏ thép có giá trị hàng chục tỉ đồng “nằm bờ” vì bị rỉ sét, hư hỏng, ngư dân Bình Định lo lắng, các công ty lại tìm cách thoái thác trách nhiệm.</p></div>
+ 						</div>
+ 						<div class="content_top_left_left_bottom">
+ 							<div class="content_top_left_left_bottom_mot">
+ 								<div class="img_chung"><img src="image\a2.png"></div>
+ 								<div class="text_chung"><a href=""><p>Dân nhập ô tô đối mặt khoản truy thu thuế trăm tỷ đồng</p></a></div>
+ 							</div>
+ 							<div class="content_top_left_left_bottom_hai">
+ 								<div class="img_chung"><img src="image\a2.png"></div>
+ 								<div class="text_chung"><a href=""><p>Dân nhập ô tô đối mặt khoản truy thu thuế trăm tỷ đồng</p></a></div>
+ 							</div>
+ 							<div class="content_top_left_left_bottom_ba">
+ 								<div class="img_chung"><img src="image\a2.png"></div>
+ 								<div class="text_chung"><a href=""><p>Dân nhập ô tô đối mặt khoản truy thu thuế trăm tỷ đồng</p></a></div>
+ 							</div>
+ 						</div>
+ 						<div class="content_top_left_left_bottom">
+ 							<div class="content_top_left_left_bottom_mot">
+ 								<div class="img_chung"><img src="image\a2.png"></div>
+ 								<div class="text_chung"><a href=""><p>Dân nhập ô tô đối mặt khoản truy thu thuế trăm tỷ đồng</p></a></div>
+ 							</div>
+ 							<div class="content_top_left_left_bottom_hai">
+ 								<div class="img_chung"><img src="image\a2.png"></div>
+ 								<div class="text_chung"><a href=""><p>Dân nhập ô tô đối mặt khoản truy thu thuế trăm tỷ đồng</p></a></div>
+ 							</div>
+ 							<div class="content_top_left_left_bottom_ba">
+ 								<div class="img_chung"><img src="image\a2.png"></div>
+ 								<div class="text_chung"><a href=""><p>Dân nhập ô tô đối mặt khoản truy thu thuế trăm tỷ đồng</p></a></div>
+ 							</div>
+ 						</div>
+ 					</div>
+ 					<div class="content_top_left_right">
+ 						<div class="bidv"><img src="image\bidv.png"></div>
+ 						<div class="content_top_left_right_tinlienquan">
+ 							<ul>
+ 								<li><a href="">Ám ảnh đàn chim bị khâu mắt để nhử đồng loại ở Hà Tĩnh</a></li>
+ 								<li><a href="">Ám ảnh đàn chim bị khâu mắt để nhử đồng loại ở Hà Tĩnh</a></li>
+ 								<li><a href="">Ám ảnh đàn chim bị khâu mắt để nhử đồng loại ở Hà Tĩnh</a></li>
+ 								<li><a href="">Ám ảnh đàn chim bị khâu mắt để nhử đồng loại ở Hà Tĩnh</a></li>
+ 								<li><a href="">Ám ảnh đàn chim bị khâu mắt để nhử đồng loại ở Hà Tĩnh</a></li>
+ 								<li><a href="">Ám ảnh đàn chim bị khâu mắt để nhử đồng loại ở Hà Tĩnh</a></li>
+ 								<li><a href="">Ám ảnh đàn chim bị khâu mắt để nhử đồng loại ở Hà Tĩnh</a></li>
+ 								<li><a href="">Ám ảnh đàn chim bị khâu mắt để nhử đồng loại ở Hà Tĩnh</a></li>
+ 								<li><a href="">Ám ảnh đàn chim bị khâu mắt để nhử đồng loại ở Hà Tĩnh</a></li>
+ 								<li><a href="">Ám ảnh đàn chim bị khâu mắt để nhử đồng loại ở Hà Tĩnh</a></li>
+ 								<li><a href="">Ám ảnh đàn chim bị khâu mắt để nhử đồng loại ở Hà Tĩnh</a></li>
+ 								<li><a href="">Ám ảnh đàn chim bị khâu mắt để nhử đồng loại ở Hà Tĩnh</a></li>
+ 								<li><a href="">Ám ảnh đàn chim bị khâu mắt để nhử đồng loại ở Hà Tĩnh</a></li>
+ 							</ul>
+ 						</div>
+ 					</div>
+ 				</div>
+ 				<div class="content_top_right">
+ 					<img src="image\quangcao.png">
+ 					<img src="image\quangcao.png">
+ 				</div>
+ 			</div>
+ 			<div class="quangcaohai"><img src="image\vnnshop.png"></div>
+ 			<div class="content_bottom">
+ 				<div class="contented">
+ 					<div class="contented_top">
+ 						<div class="content_top_mot">
+ 							<div class="content_top_mot_img"><img src="image\h1.png"></div>
+ 							<div class="content_top_mot_text"><a href=""><p>Conte và siêu vũ khí Kante: Mourinho, Wenger tiếc không?</p></a></div>
+ 						</div>
+ 						<div class="content_top_hai">
+ 							<div class="content_top_mot_img"><img src="image\h1.png"></div>
+ 							<div class="content_top_mot_text"><a href=""><p>Conte và siêu vũ khí Kante: Mourinho, Wenger tiếc không?</p></a></div>
+ 						</div>
+
+						<div class="content_top_ba">
+ 							<div class="content_top_mot_img"><img src="image\h1.png"></div>
+ 							<div class="content_top_mot_text"><a href=""><p>Conte và siêu vũ khí Kante: Mourinho, Wenger tiếc không?</p></a></div>
+ 						</div>
+
+						<div class="content_top_bon">
+ 							<div class="content_top_mot_img"><img src="image\h1.png"></div>
+ 							<div class="content_top_mot_text"><a href=""><p>Conte và siêu vũ khí Kante: Mourinho, Wenger tiếc không?</p></a></div>
+ 						</div>
+
+						<div class="content_top_nam">
+ 							<div class="content_top_mot_img"><img src="image\h1.png"></div>
+ 							<div class="content_top_mot_text"><a href=""><p>Conte và siêu vũ khí Kante: Mourinho, Wenger tiếc không?</p></a></div>
+ 						</div>
+ 					</div>
+ 					<div class="contented_mid">
+ 						<div class="contented_mid_left">
+ 							<div class="contented_mid_left_chung">
+	 							<div class="title_tintuc">
+	 								<div class="title_tintuc_left">
+	 									<a href=""><p>THOI SU</p></a>
+	 								</div>
+	 								<div class="title_tintuc_right">
+	 									<ul>
+	 										<li><a href="">DBQH</a></li>
+	 										<li><a href="">Moi Truong</a></li>
+	 										<li><a href="">Quoc Hoi</a></li>
+	 										<li><a href="">Giao Thong</a></li>
+	 										<li><a href="">Quan Su</a></li>
+	 									</ul>
+	 								</div>
+	 							</div>
+	 							<div class="noidung_tintuc">
+	 								<div class="noidung_tintuc_left">
+	 									<div class="noidung_tintuc_left_img"><img src="image\h2.png"></div>
+	 									<div class="noidung_tintuc_left_title"><a href=""><p>Chị bán thịt lợn giá rẻ xin giảm tội cho 2 phụ nữ hắt chất bẩn</p></a></div>
+	 									<div class="noidung_tintuc_left_des"><p>Trao đổi với VietNamNet sáng nay, chị Đỗ Thị Xuyến (người bị đổ chất bẩn lên phản thịt) cho biết, sẽ làm đơn xin giảm tội cho 2 người phụ ...</p></div>
+	 								</div>
+	 								<div class="noidung_tintuc_right">
+										<div class="noidung_tintuc_right_img"><img src="image\h3.png"></div>
+										<div class="noidung_tintuc_right_title"><a href=""><p>Khách hạng thương gia bị dẫn xuống máy bay vì hơi men</p></a></div>
+	 									<div class="noidung_tintuc_right_lienquan">
+	 										<ul>
+	 											<li><a href="">Phó chủ tịch HĐND xã bị xe đâm tử vong ở Huế</a></li>
+	 											<li><a href="">Cán chết người rồi bỏ chạy, không biết thi thể treo dưới gầm xe</a></li>
+	 											<li><a href="">Ám ảnh đàn chim bị khâu mắt để nhử đồng loại ở Hà Tĩnh</a></li>
+	 										</ul>
+	 									</div>
+	 								</div>
+	 							</div>
+	 						</div><!--End#THOISU-->
+	 						<div class="contented_mid_left_chung">
+	 							<div class="title_tintuc">
+	 								<div class="title_tintuc_left">
+	 									<a href=""><p>Kinh Doanh</p></a>
+	 								</div>
+	 								<div class="title_tintuc_right">
+	 									<ul>
+	 										<li><a href="">Dau tu</a></li>
+	 										<li><a href="">Tai chinh</a></li>
+	 										<li><a href="">Thi Truong</a></li>
+	 										<li><a href="">Tu van tai chinh</a></li>
+	 										
+	 									</ul>
+	 								</div>
+	 							</div>
+	 							<div class="noidung_tintuc">
+	 								<div class="noidung_tintuc_left">
+	 									<div class="noidung_tintuc_left_img"><img src="image\h2.png"></div>
+	 									<div class="noidung_tintuc_left_title"><a href=""><p>Chị bán thịt lợn giá rẻ xin giảm tội cho 2 phụ nữ hắt chất bẩn</p></a></div>
+	 									<div class="noidung_tintuc_left_des"><p>Trao đổi với VietNamNet sáng nay, chị Đỗ Thị Xuyến (người bị đổ chất bẩn lên phản thịt) cho biết, sẽ làm đơn xin giảm tội cho 2 người phụ ...</p></div>
+	 								</div>
+	 								<div class="noidung_tintuc_right">
+										<div class="noidung_tintuc_right_img"><img src="image\h3.png"></div>
+										<div class="noidung_tintuc_right_title"><a href=""><p>Khách hạng thương gia bị dẫn xuống máy bay vì hơi men</p></a></div>
+	 									<div class="noidung_tintuc_right_lienquan">
+	 										<ul>
+	 											<li><a href="">Phó chủ tịch HĐND xã bị xe đâm tử vong ở Huế</a></li>
+	 											<li><a href="">Cán chết người rồi bỏ chạy, không biết thi thể treo dưới gầm xe</a></li>
+	 											<li><a href="">Ám ảnh đàn chim bị khâu mắt để nhử đồng loại ở Hà Tĩnh</a></li>
+	 										</ul>
+	 									</div>
+	 								</div>
+	 							</div>
+	 						</div><!--End#KINHDOANH-->
+	 						<div class="contented_mid_left_chung">
+	 							<div class="title_tintuc">
+	 								<div class="title_tintuc_left">
+	 									<a href=""><p>Giair Tri</p></a>
+	 								</div>
+	 								<div class="title_tintuc_right">
+	 									<ul>
+	 										<li><a href="">The gioi sao</a></li>
+	 										<li><a href="">Thoi trang</a></li>
+	 										<li><a href="">Nhac</a></li>
+	 										<li><a href="">Truyen Hinh</a></li>
+	 										
+	 									</ul>
+	 								</div>
+	 							</div>
+	 							<div class="noidung_tintuc">
+	 								<div class="noidung_tintuc_left">
+	 									<div class="noidung_tintuc_left_img"><img src="image\h2.png"></div>
+	 									<div class="noidung_tintuc_left_title"><a href=""><p>Chị bán thịt lợn giá rẻ xin giảm tội cho 2 phụ nữ hắt chất bẩn</p></a></div>
+	 									<div class="noidung_tintuc_left_des"><p>Trao đổi với VietNamNet sáng nay, chị Đỗ Thị Xuyến (người bị đổ chất bẩn lên phản thịt) cho biết, sẽ làm đơn xin giảm tội cho 2 người phụ ...</p></div>
+	 								</div>
+	 								<div class="noidung_tintuc_right">
+										<div class="noidung_tintuc_right_img"><img src="image\h3.png"></div>
+										<div class="noidung_tintuc_right_title"><a href=""><p>Khách hạng thương gia bị dẫn xuống máy bay vì hơi men</p></a></div>
+	 									<div class="noidung_tintuc_right_lienquan">
+	 										<ul>
+	 											<li><a href="">Phó chủ tịch HĐND xã bị xe đâm tử vong ở Huế</a></li>
+	 											<li><a href="">Cán chết người rồi bỏ chạy, không biết thi thể treo dưới gầm xe</a></li>
+	 											<li><a href="">Ám ảnh đàn chim bị khâu mắt để nhử đồng loại ở Hà Tĩnh</a></li>
+	 										</ul>
+	 									</div>
+	 								</div>
+	 							</div>
+	 						</div><!--End#GIAITRI-->
+	 						<div class="contented_mid_left_chung">
+	 							<div class="title_tintuc">
+	 								<div class="title_tintuc_left">
+	 									<a href=""><p>The Gioi</p></a>
+	 								</div>
+	 								<div class="title_tintuc_right">
+	 									<ul>
+	 										<li><a href="">Cang thang trieu tien</a></li>
+	 										<li><a href="">Ho so </a></li>
+	 										<li><a href="">Chan dung</a></li>
+	 									</ul>
+	 								</div>
+	 							</div>
+	 							<div class="noidung_tintuc">
+	 								<div class="noidung_tintuc_left">
+	 									<div class="noidung_tintuc_left_img"><img src="image\h2.png"></div>
+	 									<div class="noidung_tintuc_left_title"><a href=""><p>Chị bán thịt lợn giá rẻ xin giảm tội cho 2 phụ nữ hắt chất bẩn</p></a></div>
+	 									<div class="noidung_tintuc_left_des"><p>Trao đổi với VietNamNet sáng nay, chị Đỗ Thị Xuyến (người bị đổ chất bẩn lên phản thịt) cho biết, sẽ làm đơn xin giảm tội cho 2 người phụ ...</p></div>
+	 								</div>
+	 								<div class="noidung_tintuc_right">
+										<div class="noidung_tintuc_right_img"><img src="image\h3.png"></div>
+										<div class="noidung_tintuc_right_title"><a href=""><p>Khách hạng thương gia bị dẫn xuống máy bay vì hơi men</p></a></div>
+	 									<div class="noidung_tintuc_right_lienquan">
+	 										<ul>
+	 											<li><a href="">Phó chủ tịch HĐND xã bị xe đâm tử vong ở Huế</a></li>
+	 											<li><a href="">Cán chết người rồi bỏ chạy, không biết thi thể treo dưới gầm xe</a></li>
+	 											<li><a href="">Ám ảnh đàn chim bị khâu mắt để nhử đồng loại ở Hà Tĩnh</a></li>
+	 										</ul>
+	 									</div>
+	 								</div>
+	 							</div>
+	 						</div><!--End#THEGIOI-->
+	 						<div class="contented_mid_left_chung">
+	 							<div class="title_tintuc">
+	 								<div class="title_tintuc_left">
+	 									<a href=""><p>Phap luat</p></a>
+	 								</div>
+	 								<div class="title_tintuc_right">
+	 									<ul>
+	 										<li><a href="">Ho so vu an</a></li>
+	 										<li><a href="">Ky su phap dinh</a></li>
+	 										<li><a href="">Tu van phap luat</a></li>
+	 										
+	 									</ul>
+	 								</div>
+	 							</div>
+	 							<div class="noidung_tintuc">
+	 								<div class="noidung_tintuc_left">
+	 									<div class="noidung_tintuc_left_img"><img src="image\h2.png"></div>
+	 									<div class="noidung_tintuc_left_title"><a href=""><p>Chị bán thịt lợn giá rẻ xin giảm tội cho 2 phụ nữ hắt chất bẩn</p></a></div>
+	 									<div class="noidung_tintuc_left_des"><p>Trao đổi với VietNamNet sáng nay, chị Đỗ Thị Xuyến (người bị đổ chất bẩn lên phản thịt) cho biết, sẽ làm đơn xin giảm tội cho 2 người phụ ...</p></div>
+	 								</div>
+	 								<div class="noidung_tintuc_right">
+										<div class="noidung_tintuc_right_img"><img src="image\h3.png"></div>
+										<div class="noidung_tintuc_right_title"><a href=""><p>Khách hạng thương gia bị dẫn xuống máy bay vì hơi men</p></a></div>
+	 									<div class="noidung_tintuc_right_lienquan">
+	 										<ul>
+	 											<li><a href="">Phó chủ tịch HĐND xã bị xe đâm tử vong ở Huế</a></li>
+	 											<li><a href="">Cán chết người rồi bỏ chạy, không biết thi thể treo dưới gầm xe</a></li>
+	 											<li><a href="">Ám ảnh đàn chim bị khâu mắt để nhử đồng loại ở Hà Tĩnh</a></li>
+	 										</ul>
+	 									</div>
+	 								</div>
+	 							</div>
+	 						</div><!--End#PHAPLUAT-->
+	 						<div class="contented_mid_left_chung">
+	 							<div class="title_tintuc">
+	 								<div class="title_tintuc_left">
+	 									<a href=""><p>Giao duc</p></a>
+	 								</div>
+	 								<div class="title_tintuc_right">
+	 									<ul>
+	 										<li><a href="">Nguoi thay</a></li>
+	 										<li><a href="">Tuyen sinh</a></li>
+	 										<li><a href="">Guonmg mat tre</a></li>
+	 										
+	 									</ul>
+	 								</div>
+	 							</div>
+	 							<div class="noidung_tintuc">
+	 								<div class="noidung_tintuc_left">
+	 									<div class="noidung_tintuc_left_img"><img src="image\h2.png"></div>
+	 									<div class="noidung_tintuc_left_title"><a href=""><p>Chị bán thịt lợn giá rẻ xin giảm tội cho 2 phụ nữ hắt chất bẩn</p></a></div>
+	 									<div class="noidung_tintuc_left_des"><p>Trao đổi với VietNamNet sáng nay, chị Đỗ Thị Xuyến (người bị đổ chất bẩn lên phản thịt) cho biết, sẽ làm đơn xin giảm tội cho 2 người phụ ...</p></div>
+	 								</div>
+	 								<div class="noidung_tintuc_right">
+										<div class="noidung_tintuc_right_img"><img src="image\h3.png"></div>
+										<div class="noidung_tintuc_right_title"><a href=""><p>Khách hạng thương gia bị dẫn xuống máy bay vì hơi men</p></a></div>
+	 									<div class="noidung_tintuc_right_lienquan">
+	 										<ul>
+	 											<li><a href="">Phó chủ tịch HĐND xã bị xe đâm tử vong ở Huế</a></li>
+	 											<li><a href="">Cán chết người rồi bỏ chạy, không biết thi thể treo dưới gầm xe</a></li>
+	 											<li><a href="">Ám ảnh đàn chim bị khâu mắt để nhử đồng loại ở Hà Tĩnh</a></li>
+	 										</ul>
+	 									</div>
+	 								</div>
+	 							</div>
+	 						</div><!--End#GIAODUC-->
+	 						<div class="contented_mid_left_chung">
+	 							<div class="title_tintuc">
+	 								<div class="title_tintuc_left">
+	 									<a href=""><p>Doi song</p></a>
+	 								</div>
+	 								<div class="title_tintuc_right">
+	 									<ul>
+	 										<li><a href="">Gia Dinh </a></li>
+	 										<li><a href="">song la</a></li>
+	 										<li><a href="">Gioi tre</a></li>
+	 										<li><a href="">Tam su</a></li>
+	 										<li><a href="">Du lich</a></li>
+	 									</ul>
+	 								</div>
+	 							</div>
+	 							<div class="noidung_tintuc">
+	 								<div class="noidung_tintuc_left">
+	 									<div class="noidung_tintuc_left_img"><img src="image\h2.png"></div>
+	 									<div class="noidung_tintuc_left_title"><a href=""><p>Chị bán thịt lợn giá rẻ xin giảm tội cho 2 phụ nữ hắt chất bẩn</p></a></div>
+	 									<div class="noidung_tintuc_left_des"><p>Trao đổi với VietNamNet sáng nay, chị Đỗ Thị Xuyến (người bị đổ chất bẩn lên phản thịt) cho biết, sẽ làm đơn xin giảm tội cho 2 người phụ ...</p></div>
+	 								</div>
+	 								<div class="noidung_tintuc_right">
+										<div class="noidung_tintuc_right_img"><img src="image\h3.png"></div>
+										<div class="noidung_tintuc_right_title"><a href=""><p>Khách hạng thương gia bị dẫn xuống máy bay vì hơi men</p></a></div>
+	 									<div class="noidung_tintuc_right_lienquan">
+	 										<ul>
+	 											<li><a href="">Phó chủ tịch HĐND xã bị xe đâm tử vong ở Huế</a></li>
+	 											<li><a href="">Cán chết người rồi bỏ chạy, không biết thi thể treo dưới gầm xe</a></li>
+	 											<li><a href="">Ám ảnh đàn chim bị khâu mắt để nhử đồng loại ở Hà Tĩnh</a></li>
+	 										</ul>
+	 									</div>
+	 								</div>
+	 							</div>
+	 						</div><!--End#DOISONG-->
+	 						<div class="contented_mid_left_chung">
+	 							<div class="title_tintuc">
+	 								<div class="title_tintuc_left">
+	 									<a href=""><p>The thao</p></a>
+	 								</div>
+	 								<div class="title_tintuc_right">
+	 									<ul>
+	 										<li><a href="">Bong da quoc te</a></li>
+	 										<li><a href="">Hau truong</a></li>
+	 										<li><a href="">Bong da trong nuoc</a></li>
+	 										<li><a href="">Video</a></li>
+	 									</ul>
+	 								</div>
+	 							</div>
+	 							<div class="noidung_tintuc">
+	 								<div class="noidung_tintuc_left">
+	 									<div class="noidung_tintuc_left_img"><img src="image\h2.png"></div>
+	 									<div class="noidung_tintuc_left_title"><a href=""><p>Chị bán thịt lợn giá rẻ xin giảm tội cho 2 phụ nữ hắt chất bẩn</p></a></div>
+	 									<div class="noidung_tintuc_left_des"><p>Trao đổi với VietNamNet sáng nay, chị Đỗ Thị Xuyến (người bị đổ chất bẩn lên phản thịt) cho biết, sẽ làm đơn xin giảm tội cho 2 người phụ ...</p></div>
+	 								</div>
+	 								<div class="noidung_tintuc_right">
+										<div class="noidung_tintuc_right_img"><img src="image\h3.png"></div>
+										<div class="noidung_tintuc_right_title"><a href=""><p>Khách hạng thương gia bị dẫn xuống máy bay vì hơi men</p></a></div>
+	 									<div class="noidung_tintuc_right_lienquan">
+	 										<ul>
+	 											<li><a href="">Phó chủ tịch HĐND xã bị xe đâm tử vong ở Huế</a></li>
+	 											<li><a href="">Cán chết người rồi bỏ chạy, không biết thi thể treo dưới gầm xe</a></li>
+	 											<li><a href="">Ám ảnh đàn chim bị khâu mắt để nhử đồng loại ở Hà Tĩnh</a></li>
+	 										</ul>
+	 									</div>
+	 								</div>
+	 							</div>
+	 						</div><!--End#THETHAO-->
+	 						<div class="contented_mid_left_chung">
+	 							<div class="title_tintuc">
+	 								<div class="title_tintuc_left">
+	 									<a href=""><p>Suc khoe</p></a>
+	 								</div>
+	 								<div class="title_tintuc_right">
+	 									<ul>
+	 										<li><a href="">Cac benh</a></li>
+	 										<li><a href="">phong the</a></li>
+	 										<li><a href="">Thuc pham sach</a></li>
+	 									</ul>
+	 								</div>
+	 							</div>
+	 							<div class="noidung_tintuc">
+	 								<div class="noidung_tintuc_left">
+	 									<div class="noidung_tintuc_left_img"><img src="image\h2.png"></div>
+	 									<div class="noidung_tintuc_left_title"><a href=""><p>Chị bán thịt lợn giá rẻ xin giảm tội cho 2 phụ nữ hắt chất bẩn</p></a></div>
+	 									<div class="noidung_tintuc_left_des"><p>Trao đổi với VietNamNet sáng nay, chị Đỗ Thị Xuyến (người bị đổ chất bẩn lên phản thịt) cho biết, sẽ làm đơn xin giảm tội cho 2 người phụ ...</p></div>
+	 								</div>
+	 								<div class="noidung_tintuc_right">
+										<div class="noidung_tintuc_right_img"><img src="image\h3.png"></div>
+										<div class="noidung_tintuc_right_title"><a href=""><p>Khách hạng thương gia bị dẫn xuống máy bay vì hơi men</p></a></div>
+	 									<div class="noidung_tintuc_right_lienquan">
+	 										<ul>
+	 											<li><a href="">Phó chủ tịch HĐND xã bị xe đâm tử vong ở Huế</a></li>
+	 											<li><a href="">Cán chết người rồi bỏ chạy, không biết thi thể treo dưới gầm xe</a></li>
+	 											<li><a href="">Ám ảnh đàn chim bị khâu mắt để nhử đồng loại ở Hà Tĩnh</a></li>
+	 										</ul>
+	 									</div>
+	 								</div>
+	 							</div>
+	 						</div><!--End#SUCKHOE-->
+	 						<div class="contented_mid_left_chung">
+	 							<div class="title_tintuc">
+	 								<div class="title_tintuc_left">
+	 									<a href=""><p>Cong Nghe</p></a>
+	 								</div>
+	 								<div class="title_tintuc_right">
+	 									<ul>
+	 										<li><a href="">Cong dong mang</a></li>
+	 										<li><a href="">San pham</a></li>
+	 										<li><a href="">ung dung</a></li>
+	 										<li><a href="">Tin cong nghe</a></li>
+	 									</ul>
+	 								</div>
+	 							</div>
+	 							<div class="noidung_tintuc">
+	 								<div class="noidung_tintuc_left">
+	 									<div class="noidung_tintuc_left_img"><img src="image\h2.png"></div>
+	 									<div class="noidung_tintuc_left_title"><a href=""><p>Chị bán thịt lợn giá rẻ xin giảm tội cho 2 phụ nữ hắt chất bẩn</p></a></div>
+	 									<div class="noidung_tintuc_left_des"><p>Trao đổi với VietNamNet sáng nay, chị Đỗ Thị Xuyến (người bị đổ chất bẩn lên phản thịt) cho biết, sẽ làm đơn xin giảm tội cho 2 người phụ ...</p></div>
+	 								</div>
+	 								<div class="noidung_tintuc_right">
+										<div class="noidung_tintuc_right_img"><img src="image\h3.png"></div>
+										<div class="noidung_tintuc_right_title"><a href=""><p>Khách hạng thương gia bị dẫn xuống máy bay vì hơi men</p></a></div>
+	 									<div class="noidung_tintuc_right_lienquan">
+	 										<ul>
+	 											<li><a href="">Phó chủ tịch HĐND xã bị xe đâm tử vong ở Huế</a></li>
+	 											<li><a href="">Cán chết người rồi bỏ chạy, không biết thi thể treo dưới gầm xe</a></li>
+	 											<li><a href="">Ám ảnh đàn chim bị khâu mắt để nhử đồng loại ở Hà Tĩnh</a></li>
+	 										</ul>
+	 									</div>
+	 								</div>
+	 							</div>
+	 						</div><!--End#CONGNGHE-->
+	 						<div class="contented_mid_left_chung">
+	 							<div class="title_tintuc">
+	 								<div class="title_tintuc_left">
+	 									<a href=""><p>Song dep</p></a>
+	 								</div>
+	 								
+	 							</div>
+	 							<div class="noidung_tintuc">
+	 								<div class="noidung_tintuc_left">
+	 									<div class="noidung_tintuc_left_img"><img src="image\h2.png"></div>
+	 									<div class="noidung_tintuc_left_title"><a href=""><p>Chị bán thịt lợn giá rẻ xin giảm tội cho 2 phụ nữ hắt chất bẩn</p></a></div>
+	 									<div class="noidung_tintuc_left_des"><p>Trao đổi với VietNamNet sáng nay, chị Đỗ Thị Xuyến (người bị đổ chất bẩn lên phản thịt) cho biết, sẽ làm đơn xin giảm tội cho 2 người phụ ...</p></div>
+	 								</div>
+	 								<div class="noidung_tintuc_right">
+										<div class="noidung_tintuc_right_img"><img src="image\h3.png"></div>
+										<div class="noidung_tintuc_right_title"><a href=""><p>Khách hạng thương gia bị dẫn xuống máy bay vì hơi men</p></a></div>
+	 									<div class="noidung_tintuc_right_lienquan">
+	 										<ul>
+	 											<li><a href="">Phó chủ tịch HĐND xã bị xe đâm tử vong ở Huế</a></li>
+	 											<li><a href="">Cán chết người rồi bỏ chạy, không biết thi thể treo dưới gầm xe</a></li>
+	 											<li><a href="">Ám ảnh đàn chim bị khâu mắt để nhử đồng loại ở Hà Tĩnh</a></li>
+	 										</ul>
+	 									</div>
+	 								</div>
+	 							</div>
+	 						</div><!--End#SONGDEP-->
+
+ 						</div><!--End#contented_mid_left-->
+ 						<div class="contented_mid_right">
+ 							<div class="contented_mid_right_chung">
+	 							<div class="contented_mid_right_title"><a href=""><p>Chinh Tri</p></a></div>
+	 							<div class="contented_mid_right_noidung">
+	 								<div class="contented_mid_right_noidung_img"><img src="image\h4.png"></div>
+	 								<div class="contented_mid_right_noidung_title"><a href=""><p>'Mới xử lý cán bộ về mặt Đảng, về hình sự ta đang làm'</p></a></div>
+	 							</div>
+	 							<div class="contented_mid_right_lienquan">
+	 								<ul>
+	 									<li><a href="">Chủ tịch nước dự Diễn đàn 'Vành đai và Con đường' tại TQ</a></li>
+	 									<li><a href="">Thủ tướng: Phải coi phục vụ nhân dân là quan trọng nhất</a></li>
+	 								</ul>
+	 							</div>
+	 						</div>	<!--End#CHINHTRI-->
+	 						<div class="thongtin_truyenthong">
+	 							<div class="contented_mid_right_noidung">
+	 								<div class="contented_mid_right_noidung_img"><img src="image\h4.png"></div>
+	 								<div class="contented_mid_right_noidung_title"><a href=""><p>'Mới xử lý cán bộ về mặt Đảng, về hình sự ta đang làm'</p></a></div>
+	 							</div>
+	 						</div>
+	 						<div class="contented_mid_right_chung">
+	 							<div class="contented_mid_right_title"><a href=""><p>TUAN VIET NAM</p></a></div>
+	 							<div class="contented_mid_right_noidung">
+	 								<div class="contented_mid_right_noidung_img"><img src="image\h4.png"></div>
+	 								<div class="contented_mid_right_noidung_title"><a href=""><p>'Mới xử lý cán bộ về mặt Đảng, về hình sự ta đang làm'</p></a></div>
+	 							</div>
+	 							<div class="contented_mid_right_lienquan">
+	 								<ul>
+	 									<li><a href="">Chủ tịch nước dự Diễn đàn 'Vành đai và Con đường' tại TQ</a></li>
+	 									<li><a href="">Thủ tướng: Phải coi phục vụ nhân dân là quan trọng nhất</a></li>
+	 								</ul>
+	 							</div>
+	 						</div>	<!--End#TUANVIETNAM-->
+	 						<div class="contented_mid_right_chung">
+	 							<div class="contented_mid_right_title"><a href=""><p>Bat dong san</p></a></div>
+	 							<div class="contented_mid_right_noidung">
+	 								<div class="contented_mid_right_noidung_img"><img src="image\h4.png"></div>
+	 								<div class="contented_mid_right_noidung_title"><a href=""><p>'Mới xử lý cán bộ về mặt Đảng, về hình sự ta đang làm'</p></a></div>
+	 							</div>
+	 							<div class="contented_mid_right_lienquan">
+	 								<ul>
+	 									<li><a href="">Chủ tịch nước dự Diễn đàn 'Vành đai và Con đường' tại TQ</a></li>
+	 									<li><a href="">Thủ tướng: Phải coi phục vụ nhân dân là quan trọng nhất</a></li>
+	 								</ul>
+	 							</div>
+	 						</div>	<!--End#BATDONGSAN-->
+	 						<div class="contented_mid_right_chung">
+	 							<div class="contented_mid_right_title"><a href=""><p>Viet.vn</p></a></div>
+	 							<div class="contented_mid_right_noidung">
+	 								<div class="contented_mid_right_noidung_img"><img src="image\h4.png"></div>
+	 								<div class="contented_mid_right_noidung_title"><a href=""><p>'Mới xử lý cán bộ về mặt Đảng, về hình sự ta đang làm'</p></a></div>
+	 							</div>
+	 							<div class="contented_mid_right_lienquan">
+	 								<ul>
+	 									<li><a href="">Chủ tịch nước dự Diễn đàn 'Vành đai và Con đường' tại TQ</a></li>
+	 									<li><a href="">Thủ tướng: Phải coi phục vụ nhân dân là quan trọng nhất</a></li>
+	 								</ul>
+	 							</div>
+	 						</div>	<!--End#VIET.VN-->
+	 						<div class="hoptac"><p>Chuyen trang hop tac</p></div>
+	 						<div class="contented_mid_right_chung">
+	 							<div class="contented_mid_right_title"><a href=""><p>2SAO</p></a></div>
+	 							<div class="contented_mid_right_noidung">
+	 								<div class="contented_mid_right_noidung_img"><img src="image\h4.png"></div>
+	 								<div class="contented_mid_right_noidung_title"><a href=""><p>'Mới xử lý cán bộ về mặt Đảng, về hình sự ta đang làm'</p></a></div>
+	 							</div>
+	 							<div class="contented_mid_right_lienquan">
+	 								<ul>
+	 									<li><a href="">Chủ tịch nước dự Diễn đàn 'Vành đai và Con đường' tại TQ</a></li>
+	 									<li><a href="">Thủ tướng: Phải coi phục vụ nhân dân là quan trọng nhất</a></li>
+	 								</ul>
+	 							</div>
+	 						</div>	<!--End#2SAO-->
+	 						<div class="contented_mid_right_chung">
+	 							<div class="contented_mid_right_title"><a href=""><p>Tin tuc online</p></a></div>
+	 							<div class="contented_mid_right_noidung">
+	 								<div class="contented_mid_right_noidung_img"><img src="image\h4.png"></div>
+	 								<div class="contented_mid_right_noidung_title"><a href=""><p>'Mới xử lý cán bộ về mặt Đảng, về hình sự ta đang làm'</p></a></div>
+	 							</div>
+	 							<div class="contented_mid_right_lienquan">
+	 								<ul>
+	 									<li><a href="">Chủ tịch nước dự Diễn đàn 'Vành đai và Con đường' tại TQ</a></li>
+	 									<li><a href="">Thủ tướng: Phải coi phục vụ nhân dân là quan trọng nhất</a></li>
+	 								</ul>
+	 							</div>
+	 						</div>	<!--End#TINTUCONLINE-->
+	 						<div class="contented_mid_right_chung">
+	 							<div class="contented_mid_right_title"><a href=""><p>thi truong tieu dung</p></a></div>
+	 							<div class="contented_mid_right_noidung">
+	 								<div class="contented_mid_right_noidung_img"><img src="image\h4.png"></div>
+	 								<div class="contented_mid_right_noidung_title"><a href=""><p>'Mới xử lý cán bộ về mặt Đảng, về hình sự ta đang làm'</p></a></div>
+	 							</div>
+	 							<div class="contented_mid_right_noidung">
+	 								<div class="contented_mid_right_noidung_img"><img src="image\h4.png"></div>
+	 								<div class="contented_mid_right_noidung_title"><a href=""><p>'Mới xử lý cán bộ về mặt Đảng, về hình sự ta đang làm'</p></a></div>
+	 							</div>
+	 							<div class="contented_mid_right_noidung">
+	 								<div class="contented_mid_right_noidung_img"><img src="image\h4.png"></div>
+	 								<div class="contented_mid_right_noidung_title"><a href=""><p>'Mới xử lý cán bộ về mặt Đảng, về hình sự ta đang làm'</p></a></div>
+	 							</div>
+	 							<div class="contented_mid_right_noidung">
+	 								<div class="contented_mid_right_noidung_img"><img src="image\h4.png"></div>
+	 								<div class="contented_mid_right_noidung_title"><a href=""><p>'Mới xử lý cán bộ về mặt Đảng, về hình sự ta đang làm'</p></a></div>
+	 							</div>
+	 							<div class="contented_mid_right_noidung">
+	 								<div class="contented_mid_right_noidung_img"><img src="image\h4.png"></div>
+	 								<div class="contented_mid_right_noidung_title"><a href=""><p>'Mới xử lý cán bộ về mặt Đảng, về hình sự ta đang làm'</p></a></div>
+	 							</div>
+	 							
+	 						</div>	<!--End#THITRUONGTIEUDUNG-->
+	 						<div class="raovat">
+	 							<div class="raovat_title"><p>Rao vat</p></div>
+	 							<div class="raovat_lienquan">
+		 							<ul>
+		 								<li>Đầu tư Biệt thự Bãi Kem- Phú Quốc chỉ với 4 tỷ CK 25%</li>
+		 								<li>CHCC 39 Lê Văn Lương, view hồ điều hòa 13ha, chỉ 23tr/m2</li>
+		 								<li>Mỹ Đình Plaza 2 - Tâm điểm Mỹ Đình</li>
+		 								<li>Smile Building Hoàng Mai mở bán đợt 2 chỉ 1,8 tỷ/3 phòng ngủ</li>
+		 								<li>CC ngã tư sở 1.5 tỷ/ căn 2 ngủ, liên hệ CĐT 0987091566</li>
+		 								<li>Sapa hút vốn đầu tư mạnh - khai thác du lịch 4 mùa</li>
+		 								<li>21/05 Mở bán tòa căn hộ IP2 đẹp nhất 360 Giải Phóng  </li>
+		 								<li>T&T Riverview: nhận nhà ngay- vàng trao tay</li>
+		 								<li>CH nghĩ dưỡng CC Greenbay premium tại Hạ Long, CN 10%/năm  </li>
+		 							</ul>
+	 							</div>
+	 						</div><!--End#qaovat-->
+	 						<div class="quancaobon">
+	 							<img src="image\a6.png">
+	 							<img src="image\a7.png">
+	 						</div>
+ 						</div><!--End#contented_mid_right-->
+ 					</div>
+ 					<div class="contented_bottom"></div>
+ 				</div><!--End#contented-->
+ 				<div class="quangcaoba">
+ 					<img src="image\a3.png">
+ 					<img src="image\a4.png">
+ 					<img src="image\a5.png">
+ 					<img src="image\a6.png">
+ 					<img src="image\a4.png">
+ 					<img src="image\a5.png">
+ 					
+ 				</div><!--End#quangcaoba-->
+ 			</div><!--End#content_bottom-->
+ 		</div><!--End#content-->
+ 		<div class="footer">
+ 			<div class="footered">
+ 				<div class="menu_bottom">
+ 					<ul>
+ 						<li><a href="">Pháp luật</a>
+ 							<ul>
+ 								<li><a href="">Hồ sơ vụ án</a></li>
+								<li><a href="">Ký sự pháp đình</a></li>
+								<li><a href="">Tư vấn pháp luật</a></li>
+ 							</ul>
+ 						</li>
+ 						<li><a href="">Công nghệ</a>
+ 							<ul>
+ 								<li><a href="">Hồ sơ vụ án</a></li>
+								<li><a href="">Ký sự pháp đình</a></li>
+								<li><a href="">Tư vấn pháp luật</a></li>
+ 							</ul></li>
+ 						<li><a href="">Kinh doanh</a>
+ 							<ul>
+ 								<li><a href="">Hồ sơ vụ án</a></li>
+								<li><a href="">Ký sự pháp đình</a></li>
+								<li><a href="">Tư vấn pháp luật</a></li>
+ 							</ul>
+ 						</li>
+ 						<li><a href="">Giáo dục</a>
+ 							<ul>
+ 								<li><a href="">Hồ sơ vụ án</a></li>
+								<li><a href="">Ký sự pháp đình</a></li>
+								<li><a href="">Tư vấn pháp luật</a></li>
+ 							</ul>
+ 						</li>
+ 						<li><a href="">Thời sự</a>
+ 							<ul>
+ 								<li><a href="">Hồ sơ vụ án</a></li>
+								<li><a href="">Ký sự pháp đình</a></li>
+								<li><a href="">Tư vấn pháp luật</a></li>
+ 							</ul>
+ 						</li>
+ 						<li><a href="">Giải trí</a>
+ 							<ul>
+ 								<li><a href="">Hồ sơ vụ án</a></li>
+								<li><a href="">Ký sự pháp đình</a></li>
+								<li><a href="">Tư vấn pháp luật</a></li>
+ 							</ul>
+ 						</li>
+ 						<li><a href="">Sức khỏe</a>
+ 							<ul>
+ 								<li><a href="">Hồ sơ vụ án</a></li>
+								<li><a href="">Ký sự pháp đình</a></li>
+								<li><a href="">Tư vấn pháp luật</a></li>
+ 							</ul>
+ 						</li>
+ 						<li><a href="">Thể thao</a>
+ 							<ul>
+ 								<li><a href="">Hồ sơ vụ án</a></li>
+								<li><a href="">Ký sự pháp đình</a></li>
+								<li><a href="">Tư vấn pháp luật</a></li>
+ 							</ul>
+ 						</li>
+ 						<li><a href="">Đời sống</a>
+ 							<ul>
+ 								<li><a href="">Hồ sơ vụ án</a></li>
+								<li><a href="">Ký sự pháp đình</a></li>
+								<li><a href="">Tư vấn pháp luật</a></li>
+ 							</ul>
+ 						</li>
+ 						<li><a href="">Tin thế giới</a>
+ 							<ul>
+ 								<li><a href="">Hồ sơ vụ án</a></li>
+								<li><a href="">Ký sự pháp đình</a></li>
+								<li><a href="">Tư vấn pháp luật</a></li>
+ 							</ul>
+ 						</li>
+ 						<li><a href="">Bất động sản</a>
+ 							<ul>
+ 								<li><a href="">Hồ sơ vụ án</a></li>
+								<li><a href="">Ký sự pháp đình</a></li>
+								<li><a href="">Tư vấn pháp luật</a></li>
+ 							</ul>
+ 						</li>
+ 						<li><a href="">Bạn đọc</a>
+ 							<ul>
+ 								<li><a href="">Hồ sơ vụ án</a></li>
+								<li><a href="">Ký sự pháp đình</a></li>
+								<li><a href="">Tư vấn pháp luật</a></li>
+ 							</ul>
+ 						</li>
+ 						<li><a href="">infographic</a>
+ 							<ul>
+ 								<li><a href="">24h qua</a></li>
+								
+ 							</ul>
+ 						</li>
+ 					</ul>
+ 				</div><!--End#menu_bottom-->
+
+ 				<div class="thongtin">
+ 					<div class="thongtin_web">
+ 						<img src="image\logovn.png">
+ 						<p>© 1997-2017 Báo VietNamNet. All rights reserved.</p>
+ 						<p>Thành lập ngày 19/12/1997</p>
+ 						<p>Cơ quan chủ quản: Bộ Thông tin và Truyền thông</p>
+ 						<p>Số giấy phép: 1285/GP - BTTTT, cấp ngày 27/8/2008</p>
+ 						<p>Tổng Biên Tập: Phạm Anh Tuấn</p>
+ 						<p>Tòa soạn: Tòa nhà C´Land, 156 Xã Đàn 2, Phường Nam Đồng, Quận Đống Đa, Hà Nội.</p>
+ 						<p>Đường dây nóng: 0923 457 788</p>
+ 						<p>Điện thoại: (04) 37722729 , Fax: (04) 37722734 , Email: vietnamnet@vietnamnet.vn</p>
+ 						<p>Văn phòng đại diện tại TP.HCM: Lầu 5, tòa nhà TF, 408 Điện Biên Phủ, P.11, Q.10, TP.HCM.</p>
+ 						<p>Đường dây nóng: 0962 237 788 , Điện thoại: 08 3818 1436 , Fax: 08 3818 1433</p>
+ 						<p>® Chỉ được phát hành lại thông tin từ website này khi có sự đồng ý bằng văn bản của báo VietNamNet.</p>
+ 					</div>
+ 					<div class="thongtin_lienheqc">
+ 						<div class="lienheqc_title"><a href=""><p>Lien He Quang Cao</p></a></div>
+ 						<p>CÔNG TY CỔ PHẦN TRUYỀN THÔNG VIETNAMNET</p>
+ 						<p>Hà Nội. Tel: 04 3772 7988</p>
+ 						<p>Hotline: 0919 405 885</p>
+ 						<p>Email:vietnamnetjsc.hn@vietnamnet.vn</p>
+ 						<p>Tp.HCM. Tel: 08 3930 9885</p>
+ 						<p>Hotline: 0919 435 885/p>
+ 						<p>Email: vietnamnetjsc.hcm@vietnamnet.vn</p>
+ 						<p>Hỗ trợ kỹ thuật: support@tech.vietnamnet.vn</p>
+ 						<p>Tổng đài Tel: 04 3772 2729</p>
+ 						<p>Liên hệ Tòa soạn - Đặt VietNamNet làm trang chủ</p>
+ 					</div>
+ 				</div>
+
+ 			</div>
+ 		</div>
+ 	</div>
+</body>
+</html>
